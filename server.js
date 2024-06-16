@@ -1,11 +1,17 @@
-const express = require('express');
+const express = require ('express');
+const mongodb = require('./data/database');
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello');
+const port = process.env.PORT || 3000;
+
+app.use('/', require('./routes'));
+
+mongodb.intDb((err) =>{
+    if(err){
+        console.log(err);
+    }
+    else{
+        app.listen(port,() => {console.log(`Database is running and node on port ${port}`)});
+    }
 });
 
-const port = 3000; 
-
-app.listen(process.env.port || port);
-console.log('Web Serer is listtening at port' + (process.env.port || port));

@@ -1,19 +1,24 @@
 {
-  "name": "REST-practice",
+  "name": "cse341-project1",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "first project",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tborjal/cse341-project1.git"
+  },
+  "author": "Terence Borjal",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+  "bugs": {
+    "url": "https://github.com/tborjal/cse341-project1/issues"
   },
-  "devDependencies": {
-    "nodemon": "^1.18.4"
+  "homepage": "https://github.com/tborjal/cse341-project1#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0"
   }
 }
