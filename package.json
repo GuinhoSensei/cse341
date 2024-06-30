@@ -1,24 +1,19 @@
 {
   "name": "cse341",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "CSE Project 2",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "test": "pnpm start"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Thiago Gouveia",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongodb": "^6.7.0",
-    "swagger-autogen": "^2.23.7",
-    "swagger-ui-express": "^5.0.1"
+    "express-validator": "^7.1.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.4"
   }
 }
